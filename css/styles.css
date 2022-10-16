@@ -52,7 +52,7 @@ img{
 }
 
 .information{
-    padding: 25px;
+    padding: 27px;
 }
 
 h3{
@@ -63,7 +63,7 @@ h3{
 }
 
 h1{
-    padding: 10px 0;
+    padding: 13px 0;
     font-family: 'Fraunces', serif;
     font-size: 32px;
     color: hsl(212, 21%, 14%);
@@ -91,12 +91,14 @@ h2{
 .prices span{
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
+
 }
 
-a{
+button{
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    margin-top: 15px;
+    padding: 12px 0;
     border-radius: 10px;
     justify-content: center;
     border: none;
@@ -104,22 +106,24 @@ a{
     width: 100%;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
+    border: none;
 }
 
-a img{
+button img{
     width: 20px;
     margin-right: 5px;
 }
 
-a span{
+button span{
     margin-left: 5px;
+    font-weight: bold;
 }
 
-a:hover{
+button:hover{
     background: hsl(156.3,42.2%,17.6%);
 }
 
-a:active{
+button:active{
     background: hsl(156.3,42.2%,17.6%);
 }
 
