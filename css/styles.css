@@ -146,5 +146,8 @@ a:active{
         display: none;
     }
     
+    .information{
+        width: 50%;
+    }
 
 }
