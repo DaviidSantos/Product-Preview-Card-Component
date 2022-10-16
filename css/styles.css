@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.card{
+    margin: 13px 0;
+    width: 90%;
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+}
+
+.show-desktop{
+    display: none;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.information{
+    padding: 25px;
+}
+
+h3{
+    font-weight: 500;
+    letter-spacing: 7px;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+}
+
+h1{
+    padding: 10px 0;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: hsl(212, 21%, 14%);
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+    padding: 10px 0;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.prices span{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    justify-content: center;
+    border: none;
+    background: hsl(158, 36%, 37%);
+    width: 100%;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+a span{
+    margin-left: 5px;
+}
+
+a:hover{
+    background: hsl(156.3,42.2%,17.6%);
+}
+
+a:active{
+    background: hsl(156.3,42.2%,17.6%);
+}
+
+@media screen and (min-width: 900px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        margin-top: 125px;
+        width: 40%;
+        display: flex;
+    }
+
+    .show-desktop{
+        display: inline;
+        width: 50%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .show-mobile{
+        display: none;
+    }
+
+}
