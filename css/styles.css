@@ -1,25 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
     background: hsl(30, 38%, 92%);
     font-size: 14px;
-}
-
-
-.container{
+    line-height: 1;
+    min-height: 100vh;
     display: grid;
-    place-items: center;
+    place-content: center ;
+    
 }
 
 .card{
-    margin: 13px 0;
     width: 90%;
     border-radius: 10px;
     background: hsl(0, 0%, 100%);
+    margin: 0 auto;
 }
 
 .show-desktop{
@@ -104,16 +124,16 @@ a:active{
 }
 
 @media screen and (min-width: 900px) {
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-content: center ;
     }
 
     .card{
-        margin-top: 125px;
         width: 40%;
         display: flex;
+        margin: 0 auto;
     }
 
     .show-desktop{
@@ -125,5 +145,6 @@ a:active{
     .show-mobile{
         display: none;
     }
+    
 
 }
